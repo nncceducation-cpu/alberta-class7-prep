@@ -430,7 +430,7 @@ function signSvg(s){
   else if(id.includes('school'))inner=`<g fill="#1a2733"><circle cx="38" cy="38" r="7"/><rect x="33" y="46" width="10" height="20" rx="3"/><circle cx="60" cy="34" r="7"/><rect x="55" y="42" width="10" height="20" rx="3"/></g>`;
   else if(id.includes('playground'))inner=`<g fill="#1a2733"><circle cx="50" cy="36" r="7"/><path d="M40 66 L50 45 L60 66 Z"/></g>`;
   else if(id==='one-way')inner=`<path d="M20 50 H68 M56 38 L72 50 L56 62" stroke="#1a2733" stroke-width="8" fill="none"/>`;
-  else if(id==='two-way')inner=`<path d="M38 72 V34 M30 44 L38 30 L46 44 M62 28 V66 M54 56 L62 70 L70 56" stroke="#1a2733" stroke-width="6" fill="none"/>`;
+  else if(id.includes('two-way'))inner=`<path d="M38 72 V34 M30 44 L38 30 L46 44 M62 28 V66 M54 56 L62 70 L70 56" stroke="#1a2733" stroke-width="6" fill="none"/>`;
   else if(id.includes('no-entry')||id.includes('do-not-enter'))inner=`<rect x="22" y="42" width="56" height="16" fill="#c8102e"/>`;
   else if(id.includes('no-parking'))inner=`<text x="50" y="62" font-size="34" font-weight="bold" fill="#1a2733" text-anchor="middle" font-family="Arial">P</text><line x1="22" y1="78" x2="78" y2="22" stroke="#c8102e" stroke-width="8"/>`;
   else if(id.includes('no-stopping'))inner=`<text x="50" y="62" font-size="30" font-weight="bold" fill="#1a2733" text-anchor="middle" font-family="Arial">S</text><line x1="22" y1="78" x2="78" y2="22" stroke="#c8102e" stroke-width="8"/>`;
